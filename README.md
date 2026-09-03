@@ -1,11 +1,11 @@
 **Sumario:**
-Sobre o projeto
-Objetivos
-A SpTrans
-Tecnologias utilizada
-Metodologias
-Como executar
-Equipe Desenvolvedora
+1.Sobre o projeto
+2.Objetivos
+3.A SpTrans
+4.Tecnologias utilizada
+5.Metodologias
+5.Como executar
+6.Equipe Desenvolvedora
 
 --- 
 # Projeto: Sistema de Análise Operacional (SPTrans - Sambaíba)
