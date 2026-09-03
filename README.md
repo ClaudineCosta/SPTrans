@@ -43,7 +43,7 @@ SUMÁRIO
 
 
 
-DOCUMENTO COMPLETO: Sistema de Análise Operacional (SPTrans - Sambaíba)
+Sistema de Análise Operacional (SPTrans - Sambaíba)
 ======================================================================
 
 * Nome do Projeto: Análise de Atrasos e Ocupação - SPTrans (Área 2 Norte)
