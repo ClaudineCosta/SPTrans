@@ -1,4 +1,6 @@
-Sumário: Sistema de Análise Operacional (SPTrans - Sambaíba)
+
+SUMÁRIO
+======================================================================
 
 1. Sobre o Projeto
    1.1. Objetivos
@@ -39,15 +41,14 @@ Sumário: Sistema de Análise Operacional (SPTrans - Sambaíba)
 
 15. Equipe Desenvolvedora
 
-----------------------------------------------------------------------
 
-# Projeto: Sistema de Análise Operacional (SPTrans - Sambaíba)
 
-* **Nome do Projeto:** Análise de Atrasos e Ocupação - SPTrans (Área 2 Norte)
+DOCUMENTO COMPLETO: Sistema de Análise Operacional (SPTrans - Sambaíba)
+======================================================================
 
-* **Integrantes da Equipe:** Claudine Costa, Heitor Oliveira, João Paulo, Luis Oscar
-
-* **Link do Repositório GitHub:** [https://github.com/ClaudineCosta/SPTrans]
+* Nome do Projeto: Análise de Atrasos e Ocupação - SPTrans (Área 2 Norte)
+* Integrantes da Equipe: Claudine Costa, Heitor Oliveira, João Paulo, Luis Oscar
+* Link do Repositório GitHub: https://github.com/ClaudineCosta/SPTrans
 
 ----------------------------------------------------------------------
 
@@ -74,25 +75,26 @@ de São Paulo, além de disponibilizar os dados públicos utilizados no projeto.
 
 2. Escopo, Tecnologias e Metodologias
 
-###2.1. Escopo do Projeto
-* **Empresa analisada:** Sambaíba Transportes Urbanos
-* **Região:** Área 2 – Norte (São Paulo)
-* **Fonte dos dados:** SPTrans (Dados Oficiais - API Olho Vivo e GTFS)
-* **Banco de Dados:** MySQL
-* **Linguagem / Ferramenta ETL:** Power Query / Excel]
+
+### 2.1. Escopo do Projeto
+* Empresa analisada: Sambaíba Transportes Urbanos
+* Região: Área 2 – Norte (São Paulo)
+* Fonte dos dados: SPTrans (Dados Oficiais - API Olho Vivo e GTFS)
+* Banco de Dados: MySQL
+* Linguagem / Ferramenta ETL: Power Query / Excel
 
 ### 2.2. Tecnologias Utilizadas
-* **MySQL Workbench:** Modelagem e Banco de Dados
-* **Excel / Power Query:** Apoio na transformação dos dados
-* **GitHub:** Versionamento do projeto
-* **PowerPoint:** Apresentação do projeto
+* MySQL Workbench: Modelagem e Banco de Dados
+* Excel / Power Query: Apoio na transformação dos dados
+* GitHub: Versionamento do projeto
+* PowerPoint: Apresentação do projeto
 
-### 2.2. Metodologias
-* **Engenharia de Dados:** Base estrutural que orienta todo o fluxo desde a coleta até a disponibilização para análise[cite: 1].
-* **Processo ETL (Extract, Transform, Load):** Pipeline principal onde os dados são extraídos, limpos e carregados no banco relacional[cite: 1].
-* **Modelagem Relacional:** Estruturação de tabelas, chaves primárias, estrangeiras e relacionamentos para garantir integridade[cite: 1].
-* **Kanban (Trello):** Gerenciamento de atividades da equipe (a fazer, em andamento, concluído)[cite: 1].
-* **LGPD (Lei Geral de Proteção de Dados):** Alinhamento com princípios de privacidade e uso responsável de dados[cite: 1].
+### 2.3. Metodologias
+* Engenharia de Dados: Base estrutural que orienta todo o fluxo desde a coleta até a disponibilização para análise.
+* Processo ETL (Extract, Transform, Load): Pipeline principal onde os dados são extraídos, limpos e carregados no banco relacional.
+* Modelagem Relacional: Estruturação de tabelas, chaves primárias, estrangeiras e relacionamentos para garantir integridade.
+* Kanban (Trello): Gerenciamento de atividades da equipe (a fazer, em andamento, concluído).
+* LGPD (Lei Geral de Proteção de Dados): Alinhamento com princípios de privacidade e uso responsável de dados.
 
 3. FONTES OFICIAIS DOS DADOS
 ----------------------------------------------------------------------
@@ -123,12 +125,12 @@ Indicadores de atrasos, demanda e ocupação
 O banco foi modelado para armazenar informações referentes às linhas, 
 veículos e operações da Sambaíba, permitindo análises de ocupação e atrasos.
 
-### 5.1 Estrutura do Modelo Relacional:
+5.1 Estrutura do Modelo Relacional:
 - LINHA (1) ─────────── (N) OPERAÇÃO (N) ─────────── (1) VEÍCULO
 
 6. DICIONÁRIO DE DADOS RESUMIDO
 ----------------------------------------------------------------------
-### 6.1 Tabela: linha
+6.1 Tabela: linha
 - id_linha (INT, PK): Identificador único da linha
 - numero_linha (VARCHAR 10): Número oficial da linha
 - nome_linha (VARCHAR 150): Nome da linha
@@ -136,7 +138,7 @@ veículos e operações da Sambaíba, permitindo análises de ocupação e atras
 - destino (VARCHAR 100): Terminal final
 - quantidade_frota (INT): Quantidade de ônibus alocados
 
-### 6.2 Tabela: veiculo
+6.2 Tabela: veiculo
 - id_veiculo (INT, PK): Identificador único
 - fabricante (VARCHAR 50): Fabricante
 - modelo (VARCHAR 100): Modelo do veículo
@@ -145,7 +147,7 @@ veículos e operações da Sambaíba, permitindo análises de ocupação e atras
 - capacidade_em_pe (INT): Passageiros em pé
 - ano (INT/YEAR): Ano de fabricação/modelo
 
-### 6.3 Tabela: operacao
+6.3 Tabela: operacao
 - id_operacao (INT, PK): Identificador único
 - id_linha (INT, FK): FK para linha
 - id_veiculo (INT, FK): FK para veiculo
@@ -267,6 +269,7 @@ Para rodar este projeto e configurar o banco de dados da SPTrans localmente, sig
 
 7. Execução de Consultas: Utilize as queries e relatórios prontos para gerar os indicadores de atrasos, horários críticos, demanda e ocupação média da frota.
 
+----------------------------------------------------------------------
 
 15. EQUIPE DESENVOLVEDORA
 ----------------------------------------------------------------------
@@ -275,7 +278,7 @@ Para rodar este projeto e configurar o banco de dados da SPTrans localmente, sig
 - João Paulo
 - Luis Oscar
 
-Repositório GitHub:( https://github.com/ClaudineCosta/SPTrans )
+Repositório GitHub: (https://github.com/ClaudineCosta/SPTrans)
 
 
 
