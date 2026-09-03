@@ -1,56 +1,66 @@
-
-
 **Sumario:**
 Sobre o projeto
+Objetivos
 A SpTrans
-Tecnologias utilizadas
+Tecnologias utilizada
 Metodologias
 Como executar
 Equipe Desenvolvedora
 
 --- 
+# Projeto: Sistema de Análise Operacional (SPTrans - Sambaíba)
 
-|coluna 1| coluna 2|
-|-|-|
-|texto coluna 1 | texto coluna 2|
+* **Nome do Projeto:** Análise de Atrasos e Ocupação - SPTrans (Área 2 Norte)
 
---- 
+* **Integrantes da Equipe:** Claudine Costa, Heitor Oliveira, João Paulo, Luis Oscar
+* **Link do Repositório GitHub:** [https://github.com/ClaudineCosta/SPTrans]
 
-**Sobre o projeto**
-O projeto propõe analisar os dados coletados de acordo com as informações **disponiveis** pela SpTrans:
-historico do horário das linhas (atrasos, lotaçao e ou fatores relevantes)
-Foi definido a coleta de dados da empresa **Sambaiba**, visando uma amostra da **região Norte** do municipio de São Paulo.
+---
 
-**A SpTrans**
-A SpTrans é uma **empresa publica** que gerencia e fiscaliza o sistema de onibus municipais de São Paulo.
-Ela nao é a dona dos coletivos, mas planeja as rotas, define as tarifas, admistra o bilhete unico e controla as empresas
-privadas que operam o transporte na cidade.
+## 1. Sobre o Projeto
+Este projeto desenvolve uma pesquisa de Engenharia de Dados para analisar informações operacionais da Sambaíba Transportes Urbanos, utilizando dados públicos da SPTrans. Os dados são tratados por meio de um processo ETL e armazenados em um banco de dados relacional para geração de indicadores.
 
-**Tecnologias utilizadas**
-Excel - Power Query
-MySQL Workbench
-Python - Pandas
-Github
-Word - Relatório Técnico
-Power Point
+A área de estudo corresponde à Área Operacional 2 da SPTrans (Zona Norte), operada pela empresa Sambaíba Transportes Urbanos. Esta região opera com 133 linhas e abrange distritos como Santana, Tucuruvi, Jaçanã, Vila Maria, Vila Guilherme, Tremembé, Vila Medeiros, Mandaqui, Cachoeirinha, Casa Verde e Limão.
 
-**Metodologias**
-LGPD
-Kaban - Trello
+### Objetivos
+Desenvolver uma base de dados que permita analisar:
+* Linhas com maior ocupação;
+* Horários de pico;
+* Dias da semana com maior demanda;
+* Linhas com maior índice de atraso.
 
+### Sobre a SPTrans
+A SPTrans (São Paulo Transporte S.A.) é a empresa pública responsável pelo planejamento, gerenciamento e fiscalização do transporte coletivo municipal de São Paulo, além de disponibilizar os dados públicos utilizados neste projeto.
 
-**Como Executar (Manual - passo a passo)**
+---
 
+## 2. Escopo, Tecnologias e Metodologias
 
+### Escopo do Projeto
+* **Empresa analisada:** Sambaíba Transportes Urbanos
+* **Região:** Área 2 – Norte (São Paulo)
+* **Fonte dos dados:** SPTrans (Dados Oficiais - API Olho Vivo e GTFS)[cite: 1]
+* **Banco de Dados:** MySQL[cite: 1]
+* **Linguagem / Ferramenta ETL:** Power Query / Excel[cite: 1]
 
-**Equipe Desenvolvedora**
-Anne Carine Bien
-Claudine Costa
-Heitor Oliveira
-João Paulo 
-Luis Oscar 
+### Tecnologias Utilizadas
+* **MySQL Workbench:** Modelagem e Banco de Dados[cite: 1]
+* **Excel / Power Query:** Apoio na transformação dos dados[cite: 1]
+* **GitHub:** Versionamento do projeto[cite: 1]
+* **PowerPoint:** Apresentação do projeto[cite: 1]
 
+### Metodologias
+* **Engenharia de Dados:** Base estrutural que orienta todo o fluxo desde a coleta até a disponibilização para análise[cite: 1].
+* **Processo ETL (Extract, Transform, Load):** Pipeline principal onde os dados são extraídos, limpos e carregados no banco relacional[cite: 1].
+* **Modelagem Relacional:** Estruturação de tabelas, chaves primárias, estrangeiras e relacionamentos para garantir integridade[cite: 1].
+* **Kanban (Trello):** Gerenciamento de atividades da equipe (a fazer, em andamento, concluído)[cite: 1].
+* **LGPD (Lei Geral de Proteção de Dados):** Alinhamento com princípios de privacidade e uso responsável de dados[cite: 1].
+---
+## 3. Instruções Básicas para Execução
+Para rodar este projeto e configurar o banco de dados da SPTrans localmente, siga os passos abaixo:
 
-
-
+1. **Criação do Banco de Dados:** Abra o seu MySQL Workbench, crie e selecione o banco de dados executando[cite: 1]:
+   ```sql
+  CREATE DATABASE IF NOT EXISTS estudo_sptrans;
+   USE estudo_sptrans;
 
